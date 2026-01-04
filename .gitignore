@@ -63,7 +63,7 @@ node_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-# .env
+.env
 service-account.json
 
 # dataconnect generated files

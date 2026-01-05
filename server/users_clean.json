@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "695a7ba14bfcf8a2b46f8451",
+    "username": "Admin",
+    "email": "khushisiddhapura2010@gmail.com",
+    "password": "$2b$10$iF3cG3LgN2LfdnZ8oyv16Om./voURFt/S0pCAxU5zFlAeiN/oOAg6",
+    "role": "admin",
+    "isApproved": true,
+    "createdAt": "2026-01-04T14:39:29.696Z",
+    "updatedAt": "2026-01-04T14:39:29.696Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a7ef54bfcf8a2b46f8462",
+    "username": "Khushi",
+    "email": "25it473@bvmengineering.ac.in",
+    "password": "$2b$10$mBM3C0dZRK/SLons0ox1VupOkkdxO9u4rTM4WqtVE9ZuXAYDtPHGm",
+    "role": "member",
+    "isApproved": true,
+    "createdAt": "2026-01-04T14:53:41.908Z",
+    "updatedAt": "2026-01-04T14:54:26.878Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a80e84bfcf8a2b46f8489",
+    "username": "Aaditya",
+    "email": "aadityathakkar47@gmail.com",
+    "password": "$2b$10$v8EvVCirkNt0d4Jm4Gcg3uenDgwfdCdm1m6/vQ0oDmyxEKfnKVfwa",
+    "role": "member",
+    "isApproved": true,
+    "createdAt": "2026-01-04T15:02:00.489Z",
+    "updatedAt": "2026-01-04T15:24:28.069Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a85a74bfcf8a2b46f89bd",
+    "username": "Nidhish",
+    "email": "nidhish@test.com",
+    "password": "$2b$10$4SBsLI7NoD2QMN.OIFaXl.Jaq.CuzIP92lYIJ1h4DqdK3dwWgxCpu",
+    "role": "member",
+    "isApproved": false,
+    "createdAt": "2026-01-04T15:22:15.160Z",
+    "updatedAt": "2026-01-04T15:22:15.160Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a8dad6ae264b15937ccb5",
+    "username": "Alex",
+    "email": "alex@example.com",
+    "password": "$2b$10$xDGlLSbFPVTBcT.KQy4qN.ivpfwEbpx0tloY9vNrec45vNO3h/7hy",
+    "role": "member",
+    "isApproved": true,
+    "createdAt": "2026-01-04T15:56:29.431Z",
+    "updatedAt": "2026-01-04T15:56:44.945Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a91cb74ca1152a9c2ca73",
+    "username": "Payal",
+    "email": "payal.shah3653@gmail.com",
+    "password": "$2b$10$mqP1CupCcqQMVqtTay08I./qwc.Di0IT7tR9warFJOfRXavoLCxTe",
+    "role": "member",
+    "isApproved": false,
+    "createdAt": "2026-01-04T16:14:03.974Z",
+    "updatedAt": "2026-01-04T16:14:03.974Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a9b42d8f110849e43bcca",
+    "username": "saloni",
+    "email": "saloni@gmail.com",
+    "password": "$2b$10$GvZcyPeZmvbywR9JMB3P4./c.VkQ5qAuIymHUW1BqaDKUKv10SUPq",
+    "role": "member",
+    "isApproved": false,
+    "createdAt": "2026-01-04T16:54:26.088Z",
+    "updatedAt": "2026-01-04T16:54:26.088Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a9be2d8f110849e43bce7",
+    "username": "Saloni",
+    "email": "saloni5@gmail.com",
+    "password": "$2b$10$ET/.gCcnO6WRvmzzW86mx.kiVkY82jXKciMQaSnJtCNS4pl4KWDDO",
+    "role": "member",
+    "isApproved": false,
+    "createdAt": "2026-01-04T16:57:06.644Z",
+    "updatedAt": "2026-01-04T16:57:06.644Z",
+    "__v": 0
+  }
+]

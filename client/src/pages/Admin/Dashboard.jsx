@@ -16,14 +16,15 @@ const AdminDashboard = () => {
         try {
             const [eventsRes, usersRes] = await Promise.all([
                 fetch(`${import.meta.env.VITE_API_URL}/api/events`, { headers: { Authorization: `Bearer ${token}` } }),
-                fetch(`${import.meta.env.VITE_API_URL}/api/admin/users`, { headers: { Authorization: `Bearer ${token}` } })
+                fetch(`${import.meta.env.VITE_API_URL}/api/admin/total-users`, { headers: { Authorization: `Bearer ${token}` } })
             ]);
 
             const eventsData = await eventsRes.json();
             const usersData = await usersRes.json();
+            console.log("Dashboard fetched users:", usersData.length, usersData);
 
             // Calculate Stats
-            const pendingUsersCount = usersData.filter(u => u.status === 'pending').length;
+            const pendingUsersCount = usersData.filter(u => !u.isApproved).length;
             const pendingEventsCount = eventsData.filter(e => e.status === 'pending').length;
             const activeEventsCount = eventsData.filter(e => e.status === 'approved').length;
 

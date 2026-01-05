@@ -27,7 +27,7 @@ router.post('/users', protect, admin, async (req, res) => {
             email,
             password: hashedPassword,
             role: role || 'member',
-            isApproved: false 
+            isApproved: false
         });
 
         if (user) {
@@ -53,6 +53,19 @@ router.post('/users', protect, admin, async (req, res) => {
 router.get('/users/pending', protect, admin, async (req, res) => {
     try {
         const users = await User.find({ isApproved: false, role: 'member' }).select('-password');
+        res.json(users);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+// @route   GET api/admin/total-users
+// @desc    Get all users (approved and pending)
+// @access  Private/Admin
+router.get('/total-users', protect, admin, async (req, res) => {
+    try {
+        const users = await User.find({}).select('-password');
+        console.log(`API total-users returning ${users.length} records`);
         res.json(users);
     } catch (error) {
         res.status(500).json({ message: error.message });

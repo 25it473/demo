@@ -7,11 +7,6 @@ const app = express();
 const mongoURI = process.env.MONGO_URI;
 const PORT = process.env.PORT || 5000; // This defines the port
 
-// Connect to MongoDB
-mongoose.connect(mongoURI)
-  .then(() => console.log("✅ Connected to MongoDB Atlas"))
-  .catch((err) => console.error("❌ Connection error:", err));
-
 // Middleware
 app.use(express.json());
 app.use(cors());
@@ -19,6 +14,10 @@ app.use(cors());
 // Database Connection
 const connectDB = async () => {
     try {
+        // FORCE DNS to Google to avoid local ISP timeouts
+        const dns = require('dns');
+        dns.setServers(['8.8.8.8', '8.8.4.4']);
+
         const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/gdgc_portal');
         console.log(`MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {

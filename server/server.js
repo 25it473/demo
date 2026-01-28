@@ -14,9 +14,8 @@ app.use(cors());
 // Database Connection
 const connectDB = async () => {
     try {
-        // FORCE DNS to Google to avoid local ISP timeouts
-        const dns = require('dns');
-        dns.setServers(['8.8.8.8', '8.8.4.4']);
+        // DNS override removed for production stability
+
 
         const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/gdgc_portal');
         console.log(`MongoDB Connected: ${conn.connection.host}`);
